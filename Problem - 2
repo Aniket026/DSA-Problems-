@@ -1,0 +1,36 @@
+//Write a function that check givan number is prime or not 
+
+#include<iostream>
+using namespace std;
+class prime
+{  
+    public:
+    void check();
+ 
+};
+void prime:: check()
+{int count=0,a;
+cout<<"enter the number :";
+cin>>a;
+for(int i=2;i<=a;i++)
+if(a%i==0)
+{
+    count++;
+}
+if(count >2)
+{
+    cout<<"is not prime:";
+}
+else
+{
+    cout<<" Givan number is prime ";
+}
+}
+
+int main()
+{ 
+prime a1;
+a1.check();
+return 0;
+    
+}
