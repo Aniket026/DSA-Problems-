@@ -1,0 +1,33 @@
+// Write a function thet checks if a givan number is multiple of both 3 and 5
+
+
+#include<iostream>
+using namespace std;
+class a
+{  
+    public:
+    void check();
+  
+};
+void a :: check()
+{  int a;
+    cout<<"Enter the number ";
+    cin>>a;
+    if(a % 3==0 and  a % 5==0)
+    {
+        cout<<"is divisibale by 3 and 5";
+        
+    }
+    else
+    {
+        cout<<"is not divisibale by  both 5 and 3";
+    }
+}
+
+int main()
+{ 
+    a a1;
+a1.check();
+return 0;
+    
+}
