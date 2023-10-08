@@ -1,0 +1,30 @@
+// Write a function that find the sum of all number from 1 to a givan number
+
+#include<iostream>
+using namespace std;
+class a
+{  
+    public:
+    void check();
+ 
+};
+void a:: check()
+{int count=1,a;
+
+cout<<"enter the number :";
+cin>>a;
+for(int i=2;i<=a;i++)
+{
+    count+=i;
+    
+}
+cout<<count;
+}
+
+int main()
+{ 
+a a1;
+a1.check();
+return 0;
+    
+}
