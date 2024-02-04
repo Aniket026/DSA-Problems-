@@ -1,0 +1,29 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <climits>
+
+using namespace std;
+int getadd(int num[],int n)
+{ int addition=0;
+ 
+    for(int i=0;i<=n;i++){
+        addition=(addition+num[i]);
+        
+    }
+ return addition ;
+}
+
+
+int main() {
+    int size;
+    cin>>size;
+    
+    int array[100];
+    for(int i=0;i<size;i++){
+        cin>>array[i];
+    }
+     cout<<"Minimum value"<<getadd(array,size)<<endl;
+  
+   
+    return 0;
+}
