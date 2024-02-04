@@ -7,6 +7,8 @@ int getmax(int num[],int n)
 {
     int max= INT_MIN;
     for(int i=0;i<n;i++){
+
+// or       maxi=max(maxi,num[i]);
         if(num[i]>max)
         {
             max=num[i];
