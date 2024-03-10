@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int bubble(int arr[],int size)
+{
+
+for(int i=0;i<size-i;i++)
+{
+for(int j=0;j<size;j++)
+{
+    if(arr[j]>arr[j+1])
+    {
+        swap(arr[j],arr[j+1]);
+    }
+}
+ 
+
+}
+
+}
+void display(int arry[],int s)
+{
+    for(int i=0;i<s;i++)
+{
+    cout<<arry[i]<<endl;
+
+}
+}
+int main()
+{
+    int arr[7]={7,5,4,1,44,88,8};
+    bubble(arr,7);
+    display(arr,7);
+   
+    return 0;
+}
