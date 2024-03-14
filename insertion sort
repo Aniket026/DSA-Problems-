@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int insertion(int arr[],int size)
+{
+
+for(int i=1;i<size;i++){
+    int temp=arr[i];
+    int j=i-1;
+    for(;j>=0;j--)
+    {
+        if(arr[j]>temp){
+            arr[j+1]=arr[j];
+        }
+        else{
+            break;
+        }
+    }
+    arr[j+1]=temp;
+}
+
+}
+
+
+void display(int arry[],int s)
+{
+    for(int i=0;i<s;i++)
+{
+    cout<<arry[i]<<endl;
+
+}
+}
+int main()
+{
+    int arr[7]={7,5,4,1,44,88,8};
+    insertion(arr,7);
+    display(arr,7);
+   
+    return 0;
+}
