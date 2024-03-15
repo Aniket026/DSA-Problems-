@@ -1,0 +1,40 @@
+#include<iostream>
+#include<deque>
+using namespace std;
+int main(){
+
+deque<int>q;
+
+q.push_back(1);
+
+cout<<"size of q is "<<q.size()<<endl;
+q.push_back(2);
+
+cout<<"size of q is "<<q.size()<<endl;
+q.push_back(3);
+
+cout<<"size of q is "<<q.size()<<endl;
+q.push_back(4);
+
+cout<<"size of q is "<<q.size()<<endl;
+q.push_back(5);
+
+cout<<"size of q is "<<q.size()<<endl;
+
+cout<<"before erase of q is "<<q.size()<<endl;
+q.erase(q.begin(),q.begin()+1);
+cout<<"after erase of q is "<<q.size()<<endl;
+    return 0;
+
+}
+
+
+output:
+PS C:\Users\anike\OneDrive\Desktop\DSA> cd "c:\Users\anike\OneDrive\Desktop\DSA\" ; if ($?) { g++ dequeu.cpp -o dequeu } ; if ($?) { .\dequeu }
+size of q is 1
+size of q is 2
+size of q is 3
+size of q is 4
+size of q is 5
+before erase of q is 5
+after erase of q is 4
