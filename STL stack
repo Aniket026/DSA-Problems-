@@ -1,0 +1,28 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+int main(){
+
+
+// if vector is full then its capacity is double   
+stack<string>s;
+s.push("aniket");
+s.push("borawake");
+s.push("rushi");
+s.push("chobhe");
+cout<<"size of stack : "<<s.size()<<endl;
+cout<<"first element of stack : "<<s.top()<<endl;
+s.pop();
+cout<<"first element of stack : "<<s.top()<<endl;
+cout<<"size of stack : "<<s.size()<<endl;
+cout<<" stack  is empty : "<<s.empty();
+    return 0;
+
+}
+
+output:
+size of stack : 4
+first element of stack : chobhe
+first element of stack : rushi
+size of stack : 3
+ stack  is empty : 0
