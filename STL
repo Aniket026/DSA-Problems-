@@ -1,0 +1,72 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+//if you know the size of vector
+vector <int> a(5,1);
+cout<<"Capacity of a is "<<a.capacity()<<endl;
+cout<<"size of a is "<<a.size()<<endl;
+for(int i:a){
+    cout<<i;
+}
+cout<<endl;
+
+// if vector is full then its capacity is double   
+vector<int> v;
+
+v.push_back(1);
+cout<<"Capacity of v is "<<v.capacity()<<endl;
+cout<<"size of v is "<<v.size()<<endl;
+v.push_back(2);
+cout<<"Capacity of v is "<<v.capacity()<<endl;
+cout<<"size of v is "<<v.size()<<endl;
+v.push_back(3);
+cout<<"Capacity of v is "<<v.capacity()<<endl;
+cout<<"size of v is "<<v.size()<<endl;
+v.push_back(4);
+cout<<"Capacity of v is "<<v.capacity()<<endl;
+cout<<"size of v is "<<v.size()<<endl;
+v.push_back(5);
+cout<<"Capacity of v is "<<v.capacity()<<endl;
+cout<<"size of v is "<<v.size()<<endl;
+
+
+cout<<"second element of v :"<<v.at(1)<<endl;
+cout<<"first element : "<<v.front()<<endl;
+cout<<"last element : "<<v.back()<<endl;
+for(int i:v){
+    cout<<i;
+}
+v.pop_back();
+cout<<endl;
+cout<<"after pop :";
+for(int i:v){
+    cout<<i;
+}
+    return 0;
+
+}
+
+
+
+output:
+
+
+Capacity of a is 5
+size of a is 5
+11111
+Capacity of v is 1
+size of v is 1
+Capacity of v is 2
+size of v is 2
+Capacity of v is 4
+size of v is 3
+Capacity of v is 4
+size of v is 4
+Capacity of v is 8
+size of v is 5
+second element of v :2
+first element : 1
+last element : 5
+12345
+after pop :1234
