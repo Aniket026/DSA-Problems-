@@ -1,0 +1,45 @@
+#include<iostream>
+#include<list>
+using namespace std;
+int main(){
+
+
+// if vector is full then its capacity is double   
+list<int>l;
+
+list<int> n(5,100);
+for(int i:n){
+    cout<<i;
+}
+l.push_back(1);
+
+cout<<"size of q is "<<l.size()<<endl;
+l.push_back(2);
+
+cout<<"size of q is "<<l.size()<<endl;
+l.push_back(3);
+
+cout<<"size of q is "<<l.size()<<endl;
+l.push_back(4);
+
+cout<<"size of q is "<<l.size()<<endl;
+l.push_back(5);
+
+cout<<"size of q is "<<l.size()<<endl;
+
+cout<<"before erase of q is "<<l.size()<<endl;
+l.erase(l.begin());
+cout<<"after erase of q is "<<l.size()<<endl;
+    return 0;
+
+}
+
+outut:
+100100100100100size of q is 1
+size of q is 2
+size of q is 3
+size of q is 4
+size of q is 5
+before erase of q is 5
+after erase of q is 4
+
