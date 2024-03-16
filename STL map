@@ -1,0 +1,41 @@
+
+
+#include<iostream>
+#include<map>
+using namespace std;
+int main(){
+map <int,string> m;
+m[26]="Aniket";
+m[34]="rushi";
+m[40]="akash";
+m[37]="yash";
+cout<<"size os m "<<m.size()<<endl;
+cout<<"40is present "<<m.count(40)<<endl;
+for(auto i:m)
+{
+    cout<<i.first<<" "<<i.second<<endl;;
+}
+m.insert({29,"pranit"});
+cout<<"After insertion"<<endl;
+for(auto i:m)
+{
+    cout<<i.first<<" "<<i.second<<endl;;
+}
+
+return 0;
+
+}
+
+outut:
+size os m 4
+40is present 1
+26 Aniket
+34 rushi
+37 yash
+40 akash
+After insertion
+26 Aniket
+29 pranit
+34 rushi
+37 yash
+40 akash
