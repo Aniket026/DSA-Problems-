@@ -20,7 +20,23 @@ obj1.vote()
 ##########################################################
 
 
+class A:
+    student="aniket"
+    def name(self,a):
+         print("student name is ",self.a)
+         
+class B():
+    student_prn1=966666
+    def world(self):
+        print("aniket nam mera",self.student_prn1)
 
+
+class D(A,B):
+    def info(self):
+        print(f"my name is {self.student} and mu prn is{self.student_prn1} ")
+
+obj=D()
+obj.info()
 
 
 
