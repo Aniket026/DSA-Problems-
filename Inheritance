@@ -1,0 +1,78 @@
+
+class find:
+    def __init__(self,name,age,hight):
+        self.name=name 
+        self.age=age
+        self.hight=hight
+    def take_name(self):
+        print("my name is ",self.name)
+    def vote(self):
+        if self.age<18:
+            print("not eligible")
+        else:
+            print(self.name,"are eligible")
+            
+obj1=find("aniketborawake",55,6)
+obj1.take_name()
+obj1.vote()
+
+
+##########################################################
+
+
+
+
+
+
+
+class A:
+    student_prn=9887
+    def name(self,a):
+         print("student name is ",self.a)
+         
+class B(A):
+    def world(self,a):
+        print("aniket nam mera",self.student_prn)
+    
+obj=B()
+obj.world("hii")
+  
+
+#########################################################
+
+#single inheritance
+
+class A:
+    student_prn=9887
+    def name(self,a):
+         print("student name is ",self.a)
+         
+class B(A):
+    def world(self,a):
+        print("aniket nam mera",self.student_prn)
+    
+obj=B()
+obj.world("hii")
+
+
+#########################################################
+
+
+#  inheritance
+
+class A:
+    student_prn=9887
+    def name(self,a):
+         print("student name is ",self.a)
+         
+class B(A):
+    student_prn1=966666
+    def world(self,a):
+        print("aniket nam mera",self.student_prn)
+         
+class C(B):
+    def world2(self,a):
+        print("aniket nam mera",self.student_prn1)
+    
+obj=C()
+obj.world2("hii")
